@@ -6,7 +6,9 @@ Prompt the user to enter the weight of their Baggage, and alert them if it excee
         <script>
             let doIt=() =>{
                 inputText = document.getElementById("userInput").value;
-            
+            if (Number(inputText)>15){
+                alert("limit exceeds")
+            }
                 alert(Number(inputText)+1);
             }
 
