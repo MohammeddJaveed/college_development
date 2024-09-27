@@ -7,9 +7,11 @@ function sumOfMultiples(a,b,n){
   }
   return sum
 } 
-function calulateSum(){
-  const a = parseInt(getElementById('a').value);
-  const b = parseInt(getElementById('b).value);
-    const result = sumOfMultiples (a,b)
-  alert (result)
+function calculateSum() {
+  const a = parseInt(document.getElementById('a').value);
+  const b = parseInt(document.getElementById('b').value);
+  const n =parseInt(documen.getElementById('n').value)
+
+  const result = sumOfMultiples(a, b,n);
+ alert( `The sum of multiples of ${a,b} up to ${n} is: ${result}`);
 }
