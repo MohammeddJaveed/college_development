@@ -7,6 +7,9 @@ function sumOfMultiples(a,b,n){
   }
   return sum
 } 
-const result= sumOfMultiples(a,b){
+function calulateSum(){
+  const a = parseInt(getElementById('a').value);
+  const b = parseInt(getElementById('b).value);
+    const result = sumOfMultiples (a,b)
   alert (result)
 }
