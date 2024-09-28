@@ -6,6 +6,7 @@ function sum(a,b,n)
             if(i%a==0 || i%b==0)
                 s+=i;
         }
+        console.log(sum)
         alert("Sum = "+s);
     }
 
@@ -15,5 +16,5 @@ function GetValues()
     num2 = document.getElementById("num2").value;
     limit = document.getElementById("limit").value;
     sum(num1,num2,limit);
-    alert(sum)
+
 }
