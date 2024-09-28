@@ -1,17 +1,18 @@
-function sumOfMultiples(a,b,n){
-  let sum=0;
-  for(let i=1;i<n;i++){
-    if(a%i==0 || b%i==0){
-      sum += i;
+function sum(a,b,n)
+    {
+        s=0;
+        for(i=1;i<n;i++)
+        {
+            if(i%a==0 || i%b==0)
+                s+=i;
+        }
+        alert("Sum = "+s);
     }
-  }
-  return sum
-} 
-function calculateSum() {
-  const a = parseInt(document.getElementById('a').value);
-  const b = parseInt(document.getElementById('b').value);
-  const n =parseInt(documen.getElementById('n').value)
 
-  const result = sumOfMultiples(a, b,n);
- alert( `The sum of multiples of ${a,b} up to ${n} is: ${result}`);
+function GetValues()
+{
+    num1 = document.getElementById("num1").value;
+    num2 = document.getElementById("num2").value;
+    limit = document.getElementById("limit").value;
+    sum(num1,num2,limit);
 }
