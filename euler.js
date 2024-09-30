@@ -7,7 +7,7 @@ function sum(a,b,n)
                 s+=i;
         }
         console.log(sum)
-        alert("Sum = "+s);
+        alert(`The sum of ${a} and ${b} is ${s}`);
     }
 
 function GetValues()
