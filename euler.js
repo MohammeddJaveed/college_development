@@ -7,7 +7,7 @@ function sum(a,b,n)
                 s+=i;
         }
         console.log(sum)
-        alert(`The sum of ${a} and ${b} is ${s}`);
+        alert(`The sum of the multiples of ${a} and ${b} is ${s}`);
     }
 
 function GetValues()
