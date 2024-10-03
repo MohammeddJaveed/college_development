@@ -29,7 +29,6 @@ function resetValues()
 function applyStyles(){
     const mainHead = document.getElementById("mainHead");
     mainHead.style.color="#008000"
-    mainHead.style.alignContent ="center"
     mainHead.style.fontSize="15px"
 
     const checkSum = document.getElementById("checkSum");
@@ -40,4 +39,8 @@ function applyStyles(){
     clear.style.backgroundColor = "#008080"
     clear.style.fontFamily ="Arial, sans-serif"
 
+    const contetWrapper = document.getElementById("contentWrapper");
+    contetWrapper.style.alignContent ="center"
+    wrapper.style.backgroundColor = "#f9f9f9";
+    wrapper.style.borderRadius = "10px";
 }
