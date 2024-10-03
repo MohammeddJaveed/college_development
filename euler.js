@@ -21,9 +21,9 @@ function GetValues()
 }
 function resetValues()
 {
-    document.getElementById("num1")="";
-    document.getElementById("num2")="";
-    document.getElementById("limit")="";
+    document.getElementById("num1").value="";
+    document.getElementById("num2").value="";
+    document.getElementById("limit").value="";
 
 }
 function applyStyles(){
