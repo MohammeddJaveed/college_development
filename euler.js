@@ -12,10 +12,10 @@ function sum(a,b,n)
 
 function GetValues()
 {
-   const Introduction = document.getElementById("Intro").innerHTML = "This is a page to calculate the sum of multiples of certain range"
+   document.getElementById("Intro").innerHTML = "This is a page to calculate the sum of multiples of certain range"
     num1 = document.getElementById("num1").value;
     num2 = document.getElementById("num2").value;
     limit = document.getElementById("limit").value;
-    sum(Introduction,num1,num2,limit);
+    sum(num1,num2,limit);
 
 }
