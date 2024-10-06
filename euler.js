@@ -15,7 +15,7 @@ function GetValues()
   
     num1 = document.getElementById("num1").value;
     num2 = document.getElementById("num2").value;
-    limit = document.getElementById("limit").value;
+    limit = document.getElementById("list").value;
     multiplesOfIntegers(num1,num2,limit);
 
 }
