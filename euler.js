@@ -1,13 +1,24 @@
 
 function GetValues()
 {
-  
-  let a = document.getElementById("num1").value;
-  let  b = document.getElementById("num2").value;
+  let a = document.getElementById("intElement").value.split(",").map(Number)
+//   let a = document.getElementById("num1").value;
+//   let  b = document.getElementById("num2").value;
   let l = document.getElementById("list").value.split(',').map(Number);
-  console.log(l)
-    sumOfMultiples(a,b,l);
-//    sum(a,b,n);
+ console.log(a,l)
+    // a limited to 2
+    sum2(a,l)
+
+    // a,l having no limit
+    // sumwithtwoParams(a,l) 
+
+
+     // only when l is list of array
+    // sumOfMultiples(a,b,l);
+
+
+    // regular
+//    sum(a,b,n); 
 }
 function sum(a,b,n)
     {
@@ -59,4 +70,29 @@ function sumOfMultiples(a, b, l) {
     }
     alert(`sum of multiples of ${a} and ${b} is ${sum}`)
     return sum;
+}
+function sumwithtwoParams(a,l){
+    let sum=0;
+    for(let i=0;i<a.length;i++){
+        for(let j=0;j<l.length;j++){
+            if(a[i]%a[j]==0){
+                sum +=a[i]
+                break;
+            }
+        }
+    }
+    alert(`sum is ${sum}`)
+}
+function sum2(a,l){
+   
+    let sum=0;
+    let num1=a[0];
+    let num2= a[1];
+    for(let i =0; i<l.length;i++){
+  
+        if (l[i] % num1 === 0 || l[i] % num2 === 0) {
+            sum += l[i]; 
+        }
+    }
+    alert(`sum = ${sum}`)
 }
