@@ -47,9 +47,10 @@ function applyStyles(){
 
 function sumOfMultiples(a, b, l) {
     let sum = 0;
+    console.log("avbsnm",l.length)
     
     for (let i = 0; i < l.length; i++) {
-       
+       console.log("favbyuna");
         if (l[i] % a === 0 || l[i] % b === 0) {
             sum += l[i]; 
         }
