@@ -23,7 +23,7 @@ function resetValues()
 {
     document.getElementById("num1").value="";
     document.getElementById("num2").value="";
-    document.getElementById("limit").value="";
+    document.getElementById("list").value="";
 
 }
 function applyStyles(){
