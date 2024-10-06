@@ -16,7 +16,7 @@ function GetValues()
     num1 = document.getElementById("num1").value;
     num2 = document.getElementById("num2").value;
     limit = document.getElementById("limit").value;
-    sum(num1,num2,limit);
+    multiplesOfIntegers(num1,num2,limit);
 
 }
 function resetValues()
@@ -43,4 +43,13 @@ function applyStyles(){
     contetWrapper.style.alignContent ="center"
     wrapper.style.backgroundColor = "#f9f9f9";
     wrapper.style.borderRadius = "10px";
+}
+
+function multiplesOfIntegers(a,b,l){
+    let sum=0;
+     for(let i=0;i<l.length;i++){
+        if(l[i]%a == 0 || l[i]%b==0)
+            sum +=l[i]
+     }
+     alert(`sum of all the multples of ${a} and ${b} in ${l} = ${sum} `)
 }
