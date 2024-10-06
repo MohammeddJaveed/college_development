@@ -1,3 +1,14 @@
+
+function GetValues()
+{
+  
+  let a = document.getElementById("num1").value;
+  let  b = document.getElementById("num2").value;
+  let l = document.getElementById("list").value.split(',').map(Number);
+  console.log(l)
+    sumOfMultiples(a,b,l);
+//    sum(a,b,n);
+}
 function sum(a,b,n)
     {
        let  s=0;
@@ -10,15 +21,7 @@ function sum(a,b,n)
         alert(`The sum of the multiples of ${a} and ${b} is ${s}`);
     }
 
-function GetValues()
-{
-  
-    num1 = document.getElementById("num1").value;
-    num2 = document.getElementById("num2").value;
-    limit = document.getElementById("list").value;
-    multiplesOfIntegers(num1,num2,list);
 
-}
 function resetValues()
 {
     document.getElementById("num1").value="";
@@ -40,21 +43,20 @@ function applyStyles(){
     clear.style.fontFamily ="Arial, sans-serif"
 
     const contetWrapper = document.getElementById("contentWrapper");
-    contetWrapper.style.alignContent ="center"
-    wrapper.style.backgroundColor = "#f9f9f9";
-    wrapper.style.borderRadius = "10px";
+    contetWrapper.style.alignSelf ="center"
+    contetWrapper.style.backgroundColor = "white";
+    contetWrapper.style.borderRadius = "10px";
+    contetWrapper.style.paddingTop = "40px"
 }
 
 function sumOfMultiples(a, b, l) {
     let sum = 0;
-    console.log("avbsnm",l.length)
-    
     for (let i = 0; i < l.length; i++) {
-       console.log("favbyuna");
+      
         if (l[i] % a === 0 || l[i] % b === 0) {
             sum += l[i]; 
         }
     }
-    
+    alert(`sum of multiples of ${a} and ${b} is ${sum}`)
     return sum;
 }
