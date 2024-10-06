@@ -45,11 +45,15 @@ function applyStyles(){
     wrapper.style.borderRadius = "10px";
 }
 
-function multiplesOfIntegers(a,b,l){
-    let sum=0;
-     for(let i=0;i<l.length;i++){
-        if(l[i]%a == 0 || l[i]%b==0)
-            sum +=l[i]
-     }
-     alert(`sum of all the multples of ${a} and ${b} = ${sum} `)
+function sumOfMultiples(a, b, l) {
+    let sum = 0;
+    
+    for (let i = 0; i < l.length; i++) {
+       
+        if (l[i] % a === 0 || l[i] % b === 0) {
+            sum += l[i]; 
+        }
+    }
+    
+    return sum;
 }
