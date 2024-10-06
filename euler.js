@@ -51,5 +51,5 @@ function multiplesOfIntegers(a,b,l){
         if(l[i]%a == 0 || l[i]%b==0)
             sum +=l[i]
      }
-     alert(`sum of all the multples of ${a} and ${b} in ${l} = ${sum} `)
+     alert(`sum of all the multples of ${a} and ${b} = ${sum} `)
 }
