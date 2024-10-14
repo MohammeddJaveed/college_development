@@ -5,20 +5,7 @@ function totalCost(basket, prices) {
             total += basket[product] * prices[product];
         }
     }
+    alert("Basket total ="+total)
     return total;
 }
-
-const basket = {
-    apple: 3,
-    banana: 5,
-    grapes: 2
-};
-
-const prices = {
-    apple: 3.4,
-    banana: 2,
-    grapes: 1
-};
-
-const total = totalCost(basket, prices);
-console.log(`Total cost of the basket: ${total}`);
+alert(totalCost({'apple':4,'pinapple':10},{'apple':4,'pinapple':100}))
