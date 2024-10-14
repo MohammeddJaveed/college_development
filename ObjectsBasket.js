@@ -1,7 +1,7 @@
 function totalCost(basket, prices) {
     let total = 0;
     for (let product in basket) {
-        if (prices[product]!==0) { 
+        if (prices[product]!==undefined) { 
             total += basket[product] * prices[product];
         }
     }
